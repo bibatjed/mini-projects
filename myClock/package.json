@@ -1,0 +1,28 @@
+{
+  "name": "time-teller",
+  "version": "1.0.0",
+  "description": "'a responsive web app that displays the current time'",
+  "scripts": {
+    "test": "mocha",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "time",
+    "tell-teller"
+  ],
+  "author": "Cyril Mukabwa",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.17.0",
+    "luxon": "^2.4.0",
+    "mocha": "^10.0.0",
+    "parcel": "^2.6.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.2"
+  }
+}

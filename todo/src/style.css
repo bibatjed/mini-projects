@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #0081B4;
+    --secondary-color: #D6E4E5;
+    --dark-blue: #182747;
+    --danger: #EA047E;
+}
+
+/*Global Styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+input,button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+
+body {
+    background: linear-gradient(120deg,var(--secondary-color),#fff);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+header p {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.container .subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+}
+.container #user-input  {
+  display: flex;
+   width: 50%;
+   background: #fff;
+   border-radius: 20px;
+   box-shadow: 10px 7px 16px #182747;
+   margin-bottom: 10px;
+   padding: 10px;
+   
+}
+
+.container #user-input button {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.3rem;
+    box-shadow: 10px 7px 20px #182747;
+    border-radius: 24px;
+    cursor: pointer;
+
+
+}
+
+.container #user-input input {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    flex: 2;
+}
+
+
+.container .tasks {
+   /* font-display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    margin-top: 10px;
+    */
+    width: 50%;
+    margin-top: 20px;
+}
+
+.container .task {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+    background: #D6E4E5;
+    box-shadow: 10px 7px 16px #182747;
+    border-radius: 24px;
+    margin-bottom: 20px;
+
+    animation: fadein ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+.container .task input {
+    flex: 2;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.container .task button {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.container .task .edit i {
+    color: var(--dark-blue);
+}
+
+.container .task .delete i {
+    color: var(--danger);
+}
+
+
+
+
+@media (max-width: 500px) {
+    header h1  {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    .container #user-input {
+        width: 100%;
+        margin: 10px 20px;
+    }
+
+    .container .tasks {
+        width: 100%;
+    }
+}
+
+
+
+
+

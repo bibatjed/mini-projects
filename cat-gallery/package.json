@@ -1,0 +1,26 @@
+{
+  "name": "muckswon-cat-gallery",
+  "version": "1.0.0",
+  "description": "A responsive web app to display beautiful cat pictures",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": " parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muckswon-1/muckswon-cat-gallery.git"
+  },
+  "keywords": [
+    "responsive",
+    "gallery"
+  ],
+  "author": "Cyril Mukabwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muckswon-1/muckswon-cat-gallery/issues"
+  },
+  "homepage": "https://github.com/muckswon-1/muckswon-cat-gallery#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}

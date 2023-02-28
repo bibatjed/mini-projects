@@ -1,0 +1,75 @@
+body {
+  background-color: #e5e4e2;
+}
+
+main {
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  color: #e5e4e2;
+  background-color: #010165;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  box-shadow: 5px 30px white;
+}
+main header {
+  background-color: #00ffff;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+main header h1 {
+  font-family: "Work Sans";
+  color: #010165;
+  font-size: 50px;
+  margin: 0 auto;
+}
+main .date-time-display {
+  position: relative;
+  top: 90px;
+  font-family: "Work Sans";
+}
+main .date-time-display .time {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+main .date-time-display .date {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+footer {
+  width: 50%;
+  height: 120px;
+  background-color: #00ffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 20px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline;
+  padding-right: 10%;
+  position: relative;
+  top: 60px;
+}
+footer ul li a i {
+  color: #010165;
+}
+footer .copyright {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #010165;
+  position: relative;
+  top: 70px;
+}
+
+/*# sourceMappingURL=reset.css.map */

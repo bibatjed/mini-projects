@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/308b643a03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+    <nav id="navbar">
+        <header>django Documentation</header>
+        
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Installation">Installation</a></li>
+            <li><a class="nav-link" href="#Verifying_Django_is_Installed">Verifying Django is installed</a></li>
+            <li><a class="nav-link" href="#Creating_A_project">Creating a Project</a></li>
+            <li><a class="nav-link" href="#The_development_Server">The development Server</a></li>
+            <li><a class="nav-link" href="#Database_set_up">Database set up</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+   <main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
+                Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. 
+                It's free and open source.</p>
+            <p>Django is famously known to be Ridiculously fast, Reassuringly secure and Exceedingly scalable</p>
+        </article>
+    </section>
+    <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <article>
+            <p>First step to use Django is to install it. Python is a prerequisite to install Django.
+                 You can download the latest version of python from (python website). After python is installed you can proceed to install Django code.  </p>
+            <p>
+                The following code examples show how to install Django in a Linux/MacOs and Windows environment.
+            </p>
+            <div class="code-section">
+                <p>Linux/MacOs  $ <code>python -m pip install Django</code> </p>
+                <p>Windows ...\> <code>py -m pip install Django</code></p>
+            </div>
+        </article>
+    </section>
+    <section class="main-section" id="Verifying Django_is_Installed">
+        <header>Verifying Django is Installed</header>
+        <article>
+            <p>
+                First run python by typing <code>python</code> in the terminal.
+                Then import Django at the terminal by running the following code;
+            </p>
+            <div class="code-section">
+                <p>
+                    <span>>>> <code>import django</code></span>
+                    <span>>>> <code>print(django.get_version())</code></span>
+
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="main-section" id="Creating_A_project">
+        <header>Creating A project</header>
+        <article>
+            <p>
+                You can create your first Django project by autogenerating some code; which is a collection of settings for an instance of Django, including Database configuration.
+                In your directory of choice, run the following command to create a Django project:
+            </p>
+            <div class="code-section">
+                <p>Linux/MacOs  $ <code> django-admin startproject mysite</code> </p>
+                <p>Windows ...\> <code>django-admin startproject mysite</code></p>
+            </div>
+            <p>A Django project named 'mysite' contains the following: </p>
+            <ul>
+                <li>The outer mysite/ root directory is a container for your project. Its name doesn't matter to Django; you can rename it to anything you like.</li>
+                <li>manage.py: A command-line utility that lets you interact with this Django project in various ways. You can read all the details about manage.py in django-admin and manage.py</li>
+                <li>The inner mysite/ directory is the actual Python package for your project. Its name is the Python package name you'll need to use to import anything inside it (e.g. mysite.urls).</li>
+                <li>mysite/__init__.py: An empty file that tells Python that this directory should be considered a Python package. If you're a Python beginner, read more about packages in the official Python docs.</li>
+                <li>mysite/settings.py: Settings/configuration for this Django project. Django settings will tell you all about how settings work.</li>
+                <li>mysite/urls.py: The URL declarations for this Django project; a “table of contents” of your Django-powered site. You can read more about URLs in URL dispatcher.</li>
+                <li>mysite/asgi.py: An entry-point for ASGI-compatible web servers to serve your project. See How to deploy with ASGI for more details.</li>
+                <li>mysite/wsgi.py: An entry-point for WSGI-compatible web servers to serve your project. See How to deploy with WSGI for more details.</li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="The_development_Server">
+        <header>The development Server</header>
+        <article>
+            <p>
+                You need to verify that your Django works.
+                Change to your project direct and run the following commands:
+            </p>
+            <div class="code-section">
+                <p>Linux/MacOs  $ <code> python manage.py runserver</code> </p>
+                <p>Windows ...\> <code>py manage.py runserver</code></p>
+            </div>
+            <p>
+                You should see a “Congratulations!” page, with a rocket taking off when you visit http://127.0.0.1:8000/.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Database_set_up">
+        <header>Database set up</header>
+        <article>
+            <p>
+                If you open mysite/settings.py, the default database configuration is SQLite. For learning purposes SQLite is an easy choice. You can also use another database like PostgreSQL. To change to another database, you will need to install appropriate database bindings and change the keys according to your database. 
+                Once your database is set up, you need to create tables in the database before using them. Run the following command to do this;
+            </p>
+            <div class="code-section">
+                <p>Linux/MacOs  $ <code> python manage.py migrate</code> </p>
+                <p>Windows ...\> <code>py manage.py migrate</code></p>
+            </div>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://docs.djangoproject.com/en/4.1/" target="_blank">The Official Django Documentation</a></li>
+            </ul>
+        </article>
+    </section>
+   </main>
+   </div>
+   <footer>
+    <p>Cyril Mukabwa 2022</p>
+    <ul>
+        <li><a href="https://twitter.com/won_softwares" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://web.facebook.com/profile.php?id=100081198553456" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/muckswon/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://github.com/muckswon-1" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+   </footer>
+</body>
+</html>

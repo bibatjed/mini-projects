@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Albert Sans', sans-serif;
+    color: #D3CECE;
+    background-color: #181717;
+}
+ul {
+    list-style: none;
+}
+.main {
+    display: flex;
+
+}
+.main #navbar {
+    width: 100%;
+    height: auto;
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #D8D3D3;
+    flex: 3;
+   
+    
+}
+.main #navbar header {
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #255C3B;
+    margin: 10px;
+}
+
+.main #navbar ul li {
+    text-align: center;
+    vertical-align:middle;
+    width: 70%;
+    height: 50px;
+    background-color: #181717;
+    color: #D3CECE;
+    border: 1px solid #181717;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+@media(max-width:450px){
+    .main {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .main #navbar {
+        position: fixed;
+        z-index: 1;
+    }
+    .main #navbar ul li {
+        display: inline-block;
+        
+        text-align: center;
+        vertical-align:middle;
+        width: 100px;
+        height: 20px;
+        background-color: #181717;
+        color: #D3CECE;
+        border: 1px solid #181717;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+}
+.main #navbar ul .nav-link {
+    text-decoration: none;
+    padding-top: 20px;
+    color: #D3CECE;
+    font-weight: normal;
+    font-size: 1rem;
+
+}
+.main #main-doc {
+    width: 100%;
+    height: auto;
+    background-color: #D3CECE;
+    padding: 10px;
+    margin: 10px 10px;
+   
+
+}
+.main #main-doc .main-section {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    background-color: #181717;
+    color: #D3CECE;
+    margin-bottom: 20px;
+
+    
+}
+.main #main-doc .main-section  header {
+    font-size: 1.2rem;
+    color: #255C3B;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #255C3B;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+footer li {
+    display: inline;
+    margin-left: 10%;
+}
+.fa-brands {
+    color: #D3CECE;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.fa-brands:hover {
+    color: #181717;
+}

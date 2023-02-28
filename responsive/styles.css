@@ -1,0 +1,234 @@
+/* UNIVERSAL STYLES */
+:root {
+    --html-background-color: #D9D9D9;
+    --nav-footer-background-color: #000000;
+    --welcome-section-background-color: #3C4048;
+    --section-background-color: #898AA6;
+    --image-background-color: #9CB4CC;
+    --link-color: #3E6D9C;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1024px;
+    max-height: 1440px;
+    box-sizing: border-box;
+    font-size: 67.5%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--html-background-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* END OF UNIVERSAL STYLES */
+/* HEADER */
+header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: var(--nav-footer-background-color);
+    margin-bottom: 0;
+    
+    
+}
+header nav > .nav-links  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ 
+    
+}
+
+
+header nav >  .nav-links > a {
+    color: var(--link-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+header .welcome {
+    width: 90%;
+    height: 30%;
+    background-color: var(--welcome-section-background-color);
+    position: absolute;
+    top: 0;
+    left: 10%;
+    justify-items: center;
+    color: var(--html-background-color);
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .welcome > h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+header .welcome > p {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+/* END OF HEADER */
+/*MAIN */
+main  {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+main > section {
+    height: 100%;
+    background-color: var(--section-background-color);
+    margin-top: 10px;
+    text-align: center;
+    color: var(--html-background-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    padding: 10px;
+
+}
+main > section:nth-of-type(1){
+    margin-left: 10px;
+}
+main > section:nth-of-type(3){
+    margin-right: 10px;
+}
+main > section > article  {
+    width: 100%;
+    height: 100%;
+}
+main > section > article > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+main > section > article > p {
+    font-size: 0.9rem;
+}
+main > section > article > .image {
+    width: 100%;
+    height: 30%;
+    background-color: var(--image-background-color);
+}
+main > section > article > .sub-articles {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 10px;
+  
+   
+}
+main > section > article > .sub-articles > .sub-article {
+    width: 33.3%;
+    height: 100%;
+    margin-top: 10px;
+   
+    background-color: var(--html-background-color);
+}
+
+/* END OF MAIN */
+/* FOOTER*/
+footer {
+    width: 10%;
+    height: 70%;
+    background-color: var(--nav-footer-background-color);
+    position: absolute;
+    right: 0;
+    top: 30%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-top-left-radius: 3%;
+}
+footer .social-links {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/*responsive */
+@media (max-width: 504px){
+    header {
+        flex-direction: column;
+    }
+    header > nav {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        height: 10%;
+        margin: 0;
+    }
+    header > nav > .nav-links {
+        flex-direction: row;
+        height: 100%;
+        padding: 10px;
+        justify-content:space-around;
+        align-items: center;
+    }
+    header > .welcome {
+        position: unset;
+        width: 100%;
+        margin: 0;
+        margin-top: 19%;
+        padding: 10px;
+    }
+    main {
+        width: 100%;
+        height: auto;
+        position: unset;
+        flex-wrap: wrap;
+    }
+    main > section {
+        height: auto;
+    }
+    main > section > article {
+        width: 100%;
+        height: auto;
+    }
+
+    main > section > article > .image {
+        height: 200px;
+    }
+
+    main > section > article > .sub-articles {
+        height: 200px;
+    }
+    footer {
+        width: 100%;
+        height: auto;
+        position: unset;
+        
+    }
+    footer .social-links {
+        flex-direction: row;
+    }
+}

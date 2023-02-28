@@ -1,0 +1,138 @@
+$backgroundColor: #010165;
+$primaryColor: #00ffff;
+$secondaryColor: #e5e4e2; 
+$fontFamily: 'Work Sans';
+
+body {
+    background-color: $secondaryColor;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    header {
+        background-color: $primaryColor;
+        height: 100px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+       
+    
+        h1 {
+            font-family: $fontFamily;
+            color: $backgroundColor;
+            font-size: 50px;
+            margin: 0 auto;
+            @media screen and(max-width:427px){
+                font-size: 40px;
+            }
+        }
+    }    
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    color: $secondaryColor;
+    background-color: $backgroundColor;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    box-shadow: 5px 30px white;
+    
+    @media screen and(max-width:860px){
+        width: 60%;
+    }
+    @media screen and(max-width:720px){
+        width: 70%;
+    }
+    @media screen and(max-width:620px){
+        width: 80%;
+    }
+    @media screen and(max-width:544px){
+        width: 90%;
+    }
+    @media screen and(max-width:485px){
+        width: 100%;
+    }
+   
+
+    .date-time-display {
+        position: relative;
+        top: 90px;
+        font-family: $fontFamily;
+
+        .time {
+            font-size: 50px;
+            font-weight: bold;
+            padding-bottom: 5px;
+            @media screen and(max-width:427px){
+                font-size: 40px;
+            }
+        }
+        .date {
+            font-size: 25px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        
+
+    }
+}
+
+footer {
+    width: 50%;
+    height: 120px;
+    background-color: $primaryColor;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 20px;
+
+    @media screen and(max-width:860px){
+        width: 60%;
+    }
+    @media screen and(max-width:720px){
+        width: 70%;
+    }
+    @media screen and(max-width:620px){
+        width: 80%;
+    }
+    @media screen and(max-width:544px){
+        width: 90%;
+    }
+    @media screen and(max-width:485px){
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+       
+
+        li {
+            display: inline;
+            padding-right: 10%;
+            position: relative;
+            top: 60px;
+            
+            a {
+                i {
+                    color: $backgroundColor;
+                }
+            }
+        }
+        
+    }
+
+    .copyright {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: italic;
+        color: $backgroundColor;
+        position: relative;
+        top: 70px;
+        
+    }
+}
+ 

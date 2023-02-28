@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 110%;
+    background-image: url("../resources/images/brown-background.jpg");
+    background-size: cover;
+}
+
+header {
+    
+    h1 {
+        width: 100%;
+        font-size: 3.5em;
+        line-height: 5%;
+        color: aquamarine;
+      
+    }
+    p {
+        font-size: 1.5em;
+        color:azure;
+       
+    }
+    text-align: center;
+    position: fixed;
+    left: 25%;
+    z-index: 1;
+    
+}
+main {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    height: 60%;
+
+    .column {
+        img {
+            width: 100%;
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        max-width: 25%;
+        flex: 25%;
+        padding: 0 4px;
+
+        @media only screen and (max-width: 800px){
+            flex: 50%;
+            max-width: 50%;
+        }
+        @media only screen and (max-width: 600px){
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
+footer {
+    text-align: center;
+    
+    .contact {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            border: 1px solid aqua;
+            padding: 5px;
+            margin-top: 5px 5px;
+        }
+        a:hover {
+            background-color: aliceblue;
+            color:aqua;
+        }
+    }
+
+    .copy {
+        color: aliceblue;
+        margin-top: 20px;
+    }
+}
