@@ -4,7 +4,8 @@
   "description": "'a responsive web app that displays the current time'",
   "scripts": {
     "test": "mocha",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "launch": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
