@@ -1,0 +1,20 @@
+{
+  "name": "bmicalcuator",
+  "version": "1.0.0",
+  "description": "a simple bmi calculator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html",
+    "launch": "npx parcel src/index.html"
+  },
+  "keywords": [
+    "bmi",
+    "calculator"
+  ],
+  "author": "Cyril Mukabwa",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "prettier": "2.8.4"
+  }
+}
