@@ -90,6 +90,11 @@ header p {
 }
 
 @media (max-width:576px){
+    .container {
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
    header h1 {
     font-size: 1rem;
    }
