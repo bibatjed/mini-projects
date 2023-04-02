@@ -5,8 +5,8 @@ function calculateBmi(weight,height){
     let bmi = weight / squareHeight;
 
     return bmi.toFixed(2);
-
 }
+
 
 function bmiMessage(bmi){
     let message = '';
@@ -23,51 +23,31 @@ function bmiMessage(bmi){
     return message;
 }
 
-function displayProfile(name,gender,age,height){
+function displayProfile(height,weight){
     const profile = document.createElement('div');
     profile.classList.add("profile");
-
-    const nameDiv = document.createElement('div');
-    nameDiv.classList.add("name");
-
-    let nameHtml = `
-    <h3>NAME</h3>
-    <h5>${name}</h5>
-    `;
-    nameDiv.innerHTML = nameHtml;
-    profile.appendChild(nameDiv);
-
-
-    const genderDiv = document.createElement("div");
-    genderDiv.classList.add("gender-profile");
-
-    let genderHtml = `
-        <h3>${gender.toUpperCase()}</h3>
-    `;
-    genderDiv.innerHTML = genderHtml;
-    profile.appendChild(genderDiv);
-
-
-    const ageDiv = document.createElement("div");
-    ageDiv.classList.add("age");
-
-    let ageHtml = `
-    <h3>AGE</h3>
-    <h5>${age} KG</h5>
-    `;
-    ageDiv.innerHTML = ageHtml;
-    profile.appendChild(ageDiv);
 
     const heightDiv  = document.createElement("div");
     heightDiv.classList.add("height-profile");
 
     let heightHtml = `
     <h3>HEIGHT</h3>
-    <h5>${height} CM</h5>
+    <h5>${height}CM</h5>
     `;
-
     heightDiv.innerHTML = heightHtml;
     profile.appendChild(heightDiv);
+
+    const weightDiv  = document.createElement("div");
+    
+
+    let weightHtml = `
+    <h3>WEIGHT</h3>
+    <h5>${weight}CM</h5>
+    `;
+    weightDiv.innerHTML = weightHtml;
+    profile.appendChild(weightDiv);
+
+    
 
     return profile;
 }
@@ -211,18 +191,7 @@ window.addEventListener('load',() => {
 
     calculateButton.addEventListener('click',() =>{
 
-        let name = prompt("Enter your name");
-        let gender =  prompt('Enter your gender.');
-       
-        if(name === ""){
-            name = prompt("Please enter your name");
-        }
-
-        if(gender === ""){
-            gender =  prompt('Enter your gender.');
-        }
-
-        if(!weightInput.value || !height.value || !ageInput.value){
+        if(!weightInput.value || !height.value){
             alert("Please enter missing values");
             return;
         }
@@ -230,7 +199,7 @@ window.addEventListener('load',() => {
 
         let bmi = calculateBmi(weightInput.value,height.value);
         let message = bmiMessage(bmi).toLowerCase();
-        result.appendChild(displayProfile(name,gender,ageInput.value,height.value));
+        result.appendChild(displayProfile(height.value,weightInput.value));
         displayResult(message,bmi);
         result.appendChild(backButton);
         

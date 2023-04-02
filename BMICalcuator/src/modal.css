@@ -11,7 +11,6 @@
 .result {
     width: 50%;
     margin: 0 auto;
-    margin-top: 10px;
     padding-top: 20px;
     background: var(--primary-color);
     color: var(--white);
@@ -86,3 +85,27 @@
     background: var(--danger);
     cursor: pointer;
 }
+
+
+
+@media (min-width:576px){
+    .result .profile div h3 {
+        font-size: 0.5rem;
+    }
+    .result .profile div h5 {
+        font-size: 0.2rem;
+    }
+ }
+
+ @media (min-width:768px){
+    .result .profile div h3 {
+        font-size: 0.8rem;
+    }
+    .result .profile div h5 {
+        font-size: 0.4rem;
+    }
+ }
+ 
+ 
+ 
+ 
