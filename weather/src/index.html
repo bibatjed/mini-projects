@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dad36993c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="section-center">
+            <div class="left-display">
+                <div class="date-location">
+                    <!-- <span class="day">Tuesday</span>
+                    <span class="date">20 Jun 2022</span>
+                    <span class="location"><i class="fa-sharp fa-solid fa-location-dot"></i>   Nairobi, KE</span> -->
+                </div>
+                <div class="weather-today">
+                    <!-- <img src="../resources/weather-img/day/113.png" alt="weather icon">
+                    <span class="temperature">29<sup>o</sup>C</span>
+                    <span class="weather-description">Sunny</span> -->
+                </div>
+            </div>
+            <div class="right-display">
+                <div class="stats">
+                    <!-- <div> <span>PRECIPITATION:</span> <span class="precipitation">0%</span></div>
+                    <div> <span>HUMIDITY</span> <span class="humidity">0%</span></div>
+                    <div> <span>WIND: </span> <span class="WIND">0 KM/H</span></div> -->
+                </div>
+                <div class="forecast">
+                    <!-- <div id="day1">
+                        <img src="../resources/weather-img/day/116.png" alt="weather icon">
+                        <span class="day-str">Tue</span>
+                        <span class="temp">30<sup>o</sup>C</span>
+                    </div>
+                    <div id="day2">
+                        <img src="../resources/weather-img/day/119.png" alt="weather icon">
+                        <span class="day-str">Wed</span>
+                        <span class="temp">30<sup>o</sup>C</span>
+                    </div>
+                    <div id="day3">
+                        <img src="../resources/weather-img/day/122.png" alt="weather icon">
+                        <span class="day-str">Thur</span>
+                        <span class="temp">30<sup>o</sup>C</span>
+                    </div>
+                    <div id="day4">
+                        <img src="../resources/weather-img/day/116.png" alt="weather icon">
+                        <span class="day-str">Fri</span>
+                        <span class="temp">30<sup>o</sup>C</span>
+                    </div> -->
+                </div>
+                <button class="change-location"><i class="fa-sharp fa-solid fa-location-dot"></i> Change Location</button>
+            </div>
+        </section>
+
+        <section class="modal">
+            
+            <form class="user-location">
+                <span class="error hide-section"></span>
+                <input type="text" class="city" placeholder="Enter city name">
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+        <script src="./app.js"></script>
+</body>
+</html>
