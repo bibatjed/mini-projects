@@ -120,7 +120,7 @@ function displayData(){
        }
 
     
-        const apiKey = `http://api.weatherapi.com/v1/forecast.json?key=1bc6a11b0d074047b61112518230304&q=${city}&days=5&aqi=no`;
+        const apiKey = `https://api.weatherapi.com/v1/forecast.json?key=1bc6a11b0d074047b61112518230304&q=${city}&days=5&aqi=no`;
     
 
          fetch(apiKey)
