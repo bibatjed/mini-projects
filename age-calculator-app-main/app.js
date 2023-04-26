@@ -54,7 +54,7 @@ function validateInput(){
     }else {
         dayErrorDiv.textContent = missingElementMessage;
         dayErrorDiv.classList.remove(hideElement);
-        fadeOut(dateErrorDiv,hideElement);
+        fadeOut(dayErrorDiv,hideElement);
         return;
         
     }
